@@ -1,3 +1,12 @@
+/**
+ * TODO: I assume this class is never going to
+ * have methods or do anything to intense. You
+ * should try looking into Java "Records". It'll
+ * simplify this code dramatically. I added another
+ * file that you might use to replace this one
+ * as an example. It declares all of the getters/setters
+ * for you, which should free up a lot of code. 
+ */
 public class Expense {
 
     /*

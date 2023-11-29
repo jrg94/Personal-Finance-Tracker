@@ -47,9 +47,24 @@ public class Main {
 
         // Print the details of each expense
         // Think I want to print it to a html file instead of the console
+        /**
+         * TODO: I actually like that it prints to the console
+         * here. Or at the very least, it prints a preview to
+         * the user. I will say that the default layout isn't
+         * great. That said, if you go the HTML route,
+         * it might be a good idea to print a message
+         * letting them know some simple statistics:
+         * "printing 5 expenses for a total of $112 to
+         * an HTML file"
+         */
         for (Expense expense : expenses) {
             System.out.println(expense);
         }
+        /*
+         * TODO: it should be more explicit to the user that
+         * they need to enter something here. I just hit
+         * ENTER and got the "not printing" message. 
+         */
         System.out.println("Now printing to a html file");
         Scanner input = new Scanner(System.in);
         if (input.nextLine().equalsIgnoreCase("yes")) {
@@ -72,6 +87,13 @@ public class Main {
 
         // Using try-with-resources for automatic resource management
         // Why? My IDE said i need it
+        /*
+         * TODO: The try with resources feature is really nice.
+         * It makes sure you don't have to manually close the
+         * FileWriter. As for the HTML, it looks good! I think
+         * some table headers and borders would go a long way
+         * to making the output more readable.
+         */
         try (FileWriter writer = new FileWriter(filePath)) {
 
             writer.write("<!DOCTYPE html>\n");
@@ -116,6 +138,27 @@ public class Main {
         Scanner input = new Scanner(System.in);
         ExpenseManager manager = new ExpenseManager(); // Create an instance of ExpenseManager
 
+        /*
+         * TODO: most of my feedback is around the User Interface (UI).
+         * The messages are a little hard to follow. Something I usually
+         * do for the user is print special characters at the start of
+         * each input line like:
+         * 
+         * Select one of the following options to start: add, view, ..., exit
+         * > view
+         * Here are all of your expenses:
+         *   - Tortillas ($3)
+         *   - Cheese ($4)
+         *   - Beef ($9)
+         * What else would you like to do? Options: add, view, ..., exit
+         * > ...
+         * 
+         * With that said, the software itself runs wonderfully! 
+         * The logic is great, and it's really useful. Also,
+         * the design is great, from how you're choosing to 
+         * store your data to splitting the code into separate
+         * files. 
+         */
         while (true) {
             System.out.println("Welcome to your personal Financial Tracker");
             System.out.println("What would you like to do? ");
