@@ -3,7 +3,7 @@ import java.util.List;
 
 public class ExpenseManager {
     /*
-        * This class makes sure that the methods work properly
+     * This class makes sure that the methods work properly
      */
     private final List<Expense> expenses = new ArrayList<>();
 

@@ -1,10 +1,9 @@
 public class Expense {
 
-
     /*
-        * This class create the attributes (Constructors) of the expense and make the setters and getters
+     * This class create the attributes (Constructors) of the expense and make the
+     * setters and getters
      */
-
 
     private String name;
     private int amount;
@@ -20,14 +19,37 @@ public class Expense {
     }
 
     // Getters and setters
-    public String getName() { return name; }
-    public int getAmount() { return amount; }
-    public String getCategory() { return category; }
-    public String getDate() { return date; }
-    public void setName(String name) { this.name = name; }
-    public void setAmount(int amount) { this.amount = amount; }
-    public void setCategory(String category) { this.category = category; }
-    public void setDate(String date) { this.date = date; }
+    public String getName() {
+        return name;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAmount(int amount) {
+        this.amount = amount;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 
     // Override toString for easy display
     @Override

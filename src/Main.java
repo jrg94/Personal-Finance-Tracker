@@ -15,21 +15,18 @@ public class Main {
      * @param input   Scanner object for reading user input.
      * @param manager Instance of ExpenseManager to manage expenses.
      */
-    public static void addExpense(Scanner input, ExpenseManager manager){
+    public static void addExpense(Scanner input, ExpenseManager manager) {
 
         System.out.print("Enter expense name: ");
         String name = input.nextLine();
 
-
         System.out.print("Enter amount: ");
         int amount = Integer.parseInt(input.nextLine());
-
 
         System.out.print("Enter category: ");
         System.out.println("Options: Food, Entertainment, Transportation, Utilities, Rent, Other");
         String category = input.nextLine();
         category = category.toLowerCase();
-
 
         System.out.print("Enter date (dd/mm/yyyy): ");
         String date = input.nextLine();
@@ -61,7 +58,9 @@ public class Main {
             System.out.println("Not printing to a html file");
         }
     }
-    // Going to make a method to print the expenses to a html file, view show up in the console
+
+    // Going to make a method to print the expenses to a html file, view show up in
+    // the console
     /**
      * Generates an HTML view of all expenses and writes them to a file.
      *
@@ -105,16 +104,13 @@ public class Main {
         }
     }
 
-     public static void editExpense (Scanner input, ExpenseManager manager){
+    public static void editExpense(Scanner input, ExpenseManager manager) {
 
-        }
-        public static void deleteExpense (Scanner input, ExpenseManager manager){
+    }
 
-        }
+    public static void deleteExpense(Scanner input, ExpenseManager manager) {
 
-
-
-
+    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
